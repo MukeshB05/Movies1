@@ -1,0 +1,48 @@
+.brand-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Tightened to 8px as requested */
+    color: #f8fafc;
+    font-weight: 900;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.brand-mark {
+    height: 48px; /* Reset to 48px as requested */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-image {
+    height: 100%;
+    width: auto; /* Preserve original aspect ratio */
+    object-fit: contain;
+    filter: blur(0.2px); /* Keeping only the subtle blur */
+}
+
+.brand-logo.compact {
+    gap: 8px;
+    font-size: 22px;
+}
+
+.brand-logo.compact .brand-mark {
+    height: 34px; /* Scaled height for compact mode */
+}
+
+@media (max-width: 640px) {
+    .brand-logo {
+        gap: 8px;
+        font-size: 22px;
+    }
+
+    .brand-mark {
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+    }
+}
