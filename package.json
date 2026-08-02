@@ -1,0 +1,16 @@
+{
+  "name": "Movies1",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview",
+    "lint": "npm --prefix frontend run lint"
+  },
+  "keywords": [],
+  "author": "MukeshB05",
+  "type": "module",
+  "license": "MIT",
+  "description": "Frontend-only Movies1 movie and TV discovery app using TMDB API."
+}
